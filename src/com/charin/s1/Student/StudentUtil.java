@@ -33,25 +33,25 @@ public class StudentUtil {
 	
 	}
 	
-	
-	public StudentInfo makeStudent() {
-		//키보드로 부터 이름, 번호, 국어, 영어 , 수학 입력받고 그걸 리턴
-		Scanner sc = new Scanner(System.in);
-		StudentInfo si = new StudentInfo();		
-		
-		System.out.println("이름을 입력하세요.");
-		si.name = sc.next();
-		System.out.println("번호를 입력하세요.");
-		si.number = sc.nextInt();
-		System.out.println("국어 점수를 입력하세요.");
-		si.kor = sc.nextInt();
-		System.out.println("영어 점수를 입력하세요.");
-		si.eng = sc.nextInt();
-		System.out.println("수학 점수를 입력하세요.");
-		si.math = sc.nextInt();
-		
-		
-		return si;
+//	
+//	public StudentInfo makeStudent() {
+//		//키보드로 부터 이름, 번호, 국어, 영어 , 수학 입력받고 그걸 리턴
+//		Scanner sc = new Scanner(System.in);
+//		StudentInfo si = new StudentInfo();		
+//		
+//		System.out.println("이름을 입력하세요.");
+//		si.name = sc.next();
+//		System.out.println("번호를 입력하세요.");
+//		si.number = sc.nextInt();
+//		System.out.println("국어 점수를 입력하세요.");
+//		si.kor = sc.nextInt();
+//		System.out.println("영어 점수를 입력하세요.");
+//		si.eng = sc.nextInt();
+//		System.out.println("수학 점수를 입력하세요.");
+//		si.math = sc.nextInt();
+//		
+//		
+//		return si;
 	}
 
 }
