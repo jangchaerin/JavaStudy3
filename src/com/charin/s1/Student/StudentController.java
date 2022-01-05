@@ -9,8 +9,8 @@ public class StudentController {
 		boolean check = true;
 		StudentUtil studentUtil = new StudentUtil();
 		StudentView sv = new StudentView();
-		Student [] students = null;
-		
+		Student[] students = null;
+
 		while (check) {
 			System.out.println("----------------------");
 			System.out.println("1. 학생들의 정보 입력");
@@ -19,43 +19,38 @@ public class StudentController {
 			System.out.println("4. 프로그램 종료");
 			System.out.println("----------------------");
 			int select = sc.nextInt();
-				
+
 			switch (select) {
 			case 1:
 				System.out.println("학생들의 정보 입력을 선택하셨습니다.");
-				students =studentUtil.makeStudent();
+				students = studentUtil.makeStudent();
 				break;
-			//---------------------------------------------------------	
+			// ---------------------------------------------------------
 			case 2:
-				if(students!=null) {
+				if (students != null) {
 					System.out.println("학생들의 정보 출력을 선택하셨습니다.");
 					sv.viewStudents(students);
-				}
-				else{
+				} else {
 					sv.viewMessage("학생정보를 먼저 입력하세요");
 				}
 				break;
-			//---------------------------------------------------------	
+			// ---------------------------------------------------------
 			case 3:
 				System.out.println("학생정보 검색을 선택하셨습니다.");
-				if(students==null) {
+				if (students == null) {
 					sv.viewMessage("학생정보가 없습니다.");
 				}
 				Student student = studentUtil.search(students);
-				if(student != null) {
+				if (student != null) {
 					sv.viewStudent(student);
-				}
-				else {
+				} else {
 					sv.viewMessage("검색결과가 없습니다.");
 				}
-				
-				
-				
-				
+
 				break;
-			//---------------------------------------------------------	
+			// ---------------------------------------------------------
 			default:
-				//check != check;
+				// check != check;
 				check = false;
 				break;
 			}

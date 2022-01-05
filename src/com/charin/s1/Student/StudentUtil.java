@@ -6,11 +6,8 @@ public class StudentUtil {
 	
 		//검색할 학생의 번호 입력
 		//입력받은 번호와 일치하는 학생출력
-		
-
 		public Student search(Student [] students) {
-			//검색할 학생의 번호를 입력
-			//입력 받은 번호와 일치하는 학생을 찾아서 리턴
+		
 			Scanner sc = new Scanner(System.in);
 			System.out.println("검색할 학생 번호 입력");
 			int num = sc.nextInt();

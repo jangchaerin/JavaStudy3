@@ -5,7 +5,10 @@ public class StudentMain {
 
 		StudentController sc = new StudentController();
 		
-		sc.start();
+		//sc.start();
+		Student student = new Student();
+		student.name="iu";
+		student.makeTotal();
 		
 		System.out.println("종료");
 
