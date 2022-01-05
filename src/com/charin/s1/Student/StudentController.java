@@ -8,9 +8,10 @@ public class StudentController {
 		Scanner sc = new Scanner(System.in);
 		boolean check = true;
 		StudentUtil studentUtil = new StudentUtil();
+		studentUtil.initUtil();
 		StudentView sv = new StudentView();
 		Student[] students = null;
-
+	
 		while (check) {
 			System.out.println("----------------------");
 			System.out.println("1. 학생들의 정보 입력");
@@ -30,6 +31,7 @@ public class StudentController {
 				if (students != null) {
 					System.out.println("학생들의 정보 출력을 선택하셨습니다.");
 					sv.viewStudents(students);
+					
 				} else {
 					sv.viewMessage("학생정보를 먼저 입력하세요");
 				}
