@@ -5,6 +5,7 @@ public class MethodMain {
 	public static void main(String[] args) {
 	
 		System.out.println("mainmethod start");
+		System.out.println("confff test");
 		
 		//객체 셍성코드
 		//new 클래스명();
