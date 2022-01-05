@@ -6,6 +6,7 @@ public class MethodMain {
 	
 		System.out.println("mainmethod start");
 		System.out.println("confff test");
+		System.out.println("github edit");
 		
 		//객체 셍성코드
 		//new 클래스명();
