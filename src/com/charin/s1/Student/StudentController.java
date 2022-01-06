@@ -8,7 +8,7 @@ public class StudentController {
 		Scanner sc = new Scanner(System.in);
 		boolean check = true;
 		StudentUtil studentUtil = new StudentUtil();
-		studentUtil.initUtil();
+		//studentUtil.initUtil();		//StudentUtil의 8 9 10번을 해주면 이 줄은 안써줘도됨
 		StudentView sv = new StudentView();
 		Student[] students = null;
 	
